@@ -3,7 +3,7 @@
 In this milestone, we'll build a pool contract that can receive liquidity from users and make swaps within a price range.  To keep it as simple as possible, we'll provide liquidity only in one price range and we'll allow to make swaps only in one direction. Also, we'll calculate all the required math manually to get better intuition before starting to use mathematical libs in Solidity.
 
 Let's model the situation we'll build:
-1. There will be an ETH/USDC pool contract. ETH will be the \\(x\\) reserve, and USDC will be the \\(y\\) reserve.
+1. There will be an ETH/USDC pool contract. ETH will be the $x$ reserve, and USDC will be the $y$ reserve.
 1. We'll set the current price to 5000 USDC per 1 ETH.
 1. The range we'll provide liquidity into is 4545-5500 USDC per 1 ETH.
 1. We'll buy some ETH from the pool. At this point, since we have only one price range, we want the price of the trade
